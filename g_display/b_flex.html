@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>flex</title>
+        <style>
+            div.row {
+                display: flex;
+            }
+            div.row div {
+                border: solid 1px black;
+                border-collapse: collapse;
+                /* 적용 안됨!(개발자 모드로 체크박스로 확인) */
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 3행 4열 -->
+        <div id="table"></div>
+        <div class="row">
+            <div class="col">1열</div>
+            <div class="col">2열</div>
+            <div class="col">3열</div>
+            <div class="col">4열</div>
+        </div>
+        <div class="row">
+            <div class="col">1열</div>
+            <div class="col">2열</div>
+            <div class="col">3열</div>
+            <div class="col">4열</div>
+        </div>
+        <div class="row">
+            <div class="col">1열</div>
+            <div class="col">2열</div>
+            <div class="col">3열</div>
+            <div class="col">4열</div>
+        </div>
+    </body>
+</html>

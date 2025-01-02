@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>네이버 : 회원가입</title>
+        <link rel="stylesheet" href="Naver.css" />
+        <style>
+            @font-face {
+                font-family: MALGUN;
+                src: url("malgun.ttf") format("truetype");
+            }
+            #body {
+                font-family: MALGUN;
+            }
+            #chk {
+                display: flex;
+                justify-content: end;
+                margin: 10px 20px;
+            }
+            #bigbody {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #main1 {
+                width: 500px;
+                height: 120px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 20px auto 20px;
+            }
+            .id_text {
+                display: flex;
+                align-items: center;
+            }
+            .id {
+                display: flex;
+            }
+            .id input,
+            .pw input,
+            .email input {
+                width: 100%;
+                height: 40px;
+                border: none;
+                box-sizing: border-box;
+                padding: 5px 10px 5px;
+                border-bottom: 0.1px solid gray;
+            }
+            .id input {
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+            .email input {
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+
+            #main2 {
+                width: 500px;
+                height: 200px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 20px auto 20px;
+            }
+
+            .name input,
+            .phone input,
+            .birth input,
+            .tel select {
+                width: 100%;
+                height: 40px;
+                box-sizing: border-box;
+                padding: 5px 10px 5px;
+                border: none;
+            }
+            .name,
+            .phone,
+            .birth,
+            .tel,
+            .radioButtonStyle {
+                border-bottom: 0.1px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div><img src="naverlogo.png" width="100px" /></div>
+        <!-- 네이버 로고 -->
+        <div id="chk">
+            <label
+                >실명 인증된 아이디로 가입<input type="checkbox" name=""
+            /></label>
+        </div>
+        <!-- 체크박스 -->
+        <div id="bigbody">
+            <div id="main1">
+                <div class="id">
+                    <input
+                        type="text"
+                        placeholder="아이디"
+                        class="input"
+                        value=""
+                    />
+                    <div class="id_text">@naver.com</div>
+                </div>
+                <div class="pw">
+                    <label
+                        ><input type="text" name="" placeholder="비밀번호"
+                    /></label>
+                </div>
+                <div class="email">
+                    <label
+                        ><input type="text" name="" placeholder="이메일 주소"
+                    /></label>
+                </div>
+            </div>
+            <!-- 아이디~이메일주소 -->
+            <div id="main2">
+                <div class="name">
+                    <label><input type="text" placeholder="이름" /></label>
+                </div>
+                <div class="birth">
+                    <label
+                        ><input type="text" placeholder="생년월일 8자리"
+                    /></label>
+                </div>
+                <div class="tel">
+                    <label
+                        ><select name="tel" id="">
+                            <option value="init" selected>통신사 선택</option>
+                            <option value="T">SKT</option>
+                            <option value="K">KT</option>
+                            <option value="U">LG U+</option>
+                            <option value="TR">SKT 알뜰폰</option>
+                            <option value="KR">KT 알뜰폰</option>
+                            <option value="UR">LG U+ 알뜰폰</option>
+                        </select></label
+                    >
+                </div>
+                <div class="radioButtonStyle">
+                    <label class="aa">
+                        <label class="radioStyle"
+                            ><input type="radio" name="gen" /><span
+                                >남자</span
+                            ></label
+                        >
+                        <label class="radioStyle"
+                            ><input type="radio" name="gen" /><span
+                                >여자</span
+                            ></label
+                        >
+                        <label class="radioStyle"
+                            ><input type="radio" name="nat" /><span
+                                >내국인</span
+                            ></label
+                        >
+                        <label class="radioStyle"
+                            ><input type="radio" name="nat" /><span
+                                >외국인</span
+                            ></label
+                        >
+                    </label>
+                    <!-- 남/녀 내/외국인 -->
+                </div>
+                <div class="phone">
+                    <label
+                        ><input type="text" placeholder="휴대전화번호"
+                    /></label>
+                </div>
+            </div>
+            <!-- 이름~휴대폰 -->
+            <div></div>
+            <!-- 약관 동의 -->
+        </div>
+    </body>
+</html>

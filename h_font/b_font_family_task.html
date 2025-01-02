@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>폰트 적용 실습</title>
+        <link
+            rel="stylesheet"
+            href="https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.woff2"
+        />
+        <style>
+            @font-face {
+                font-family: Yuri;
+                src: url("fonts/NanumDaeGwangYuRi.ttf") format("truetype");
+            }
+            @font-face {
+                font-family: NexonGothicBold;
+                src: url("fonts/NEXON\ Lv1\ Gothic\ OTF\ Bold.woff")
+                    format("woff");
+            }
+            @font-face {
+                font-family: Noto Sans KR;
+                src: url("https://fonts.gstatic.com/s/notosanskr/v36/PbykFmXiEBPT4ITbgNA5CgmG0X7t.woff2")
+                    format("woff2-variations");
+            }
+
+            body {
+                font-size: 2rem;
+            }
+            h1 {
+                font-family: Yuri;
+            }
+            h2 {
+                font-family: NexonGothicBold;
+                font-size: 14px;
+                color: #17191d;
+            }
+            h3 {
+                font-family: Noto Sans KR;
+            }
+            h4 {
+                font-family: SamsungSharpSans-Bold;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>안녕</h1>
+        <h2>하세요</h2>
+        <h3>스마일게이트</h3>
+        <h4>갤럭시</h4>
+    </body>
+</html>
+
+<!-- 네이버 폰트에서 1개 가져와 적용 -->
+<!-- 서비스 되고 있는 사이트의 폰트 찾아서 적용 -->
+<!-- 1. 기본 폰트인지 확인 -->
+<!-- 2. 개발자 모드에서 검색(요소 or 네트워크) -->
+<!-- 3. 안 나오면 직접 폰트 다운로드  -->
+<!-- <link href="https://hangeul.pstatic.net/hangeul_static/css/NanumGoRyeoGeurGgor.css" rel="stylesheet">
+
+ -->

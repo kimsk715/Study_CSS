@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>스타일 상속</title>
+    </head>
+    <style>
+        body {
+            color: blue;
+        }
+        * {
+            color: red;
+        }
+        button {
+            color: inherit;
+            /* 자동으로 스타일이 상속되지 않는 태그들은 직접 '상속' */
+            /* 직접 상속을 준 대상은 명시도에 따라 우선순위 결정 */
+            /* 태그 >> 전체 >> 상속 */
+        }
+    </style>
+    <body>
+        <span>SPAN</span>
+        <h1>Header</h1>
+        <p>paragraph</p>
+        <button>Button</button>
+    </body>
+</html>

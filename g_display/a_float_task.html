@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>float 실습</title>
+        <style>
+            #main {
+                /* width: 960px; */
+                /* 고정 픽셀 */
+                width: 100%;
+                /* 브라우저 크기에 비례 */
+                height: 232.28px;
+                margin: 0 auto;
+            }
+            .sub {
+                width: 320px;
+                height: 232.28px;
+                float: left;
+            }
+            .sub img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div class="sub">
+                <img src="images\img1.jpg" />
+            </div>
+            <div class="sub">
+                <img src="images\img2.jpg" />
+            </div>
+            <div class="sub">
+                <img src="images\img3.jpg" />
+            </div>
+        </div>
+    </body>
+</html>
+<!-- 이미지 3장을 가로로 배치 -->
+<!-- 각 이미지는 블록 요소로 감싸기 -->
+<!-- 이미지 크기에 맞게 조정정 -->

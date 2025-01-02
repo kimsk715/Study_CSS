@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class와 ID 속성</title>
+        <style>
+            /* 선택자가 같으면 아래에 있는 속성이 우선순위, ID > 클래스 */
+            .span1 {
+                color: blue;
+            }
+            .span2 {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <span>클래스와 아이디 속성</span>
+        <span id="text" class="span1 span2 span3"
+            >아이디는 단 한개의 값만 작성할 수 있고, 클래스는 여러 값을 작성할
+            수 있음.
+            <!-- 공백으로 구분 -->
+        </span>
+    </body>
+</html>

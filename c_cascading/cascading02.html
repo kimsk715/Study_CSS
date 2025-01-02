@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            p {
+                text-align: center;
+                font-size: 30px;
+                color: green;
+            }
+            .summer {
+                background-color: yellow;
+                color: black;
+            }
+            p.summer {
+                background-color: pink;
+            }
+            body p.summer {
+                background-color: blue;
+                color: white;
+            }
+            body p:first-child,
+            .summer {
+                color: hotpink !important;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="spr">봄</p>
+        <p class="summer" style="background-color: blue">여름</p>
+        <p class="fall">가을</p>
+        <p class="win">겨울</p>
+    </body>
+</html>
+
+<!-- /* 여름을 제외한 나머지 p태그의 글자색을 녹색으로 변경 */
+            /* 여름의 기본 배경색을 핑크색으로 변경 */
+            /* 여름의 배경색을 파란색으로 변경 */
+            /* 봄과 여름에만 글자색을 핫핑크색으로 변경 */ -->

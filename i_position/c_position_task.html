@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position 실습</title>
+        <style>
+            #image {
+                margin: 0 auto;
+                width: 220px;
+                height: 315px;
+                background-image: url("https://gangnam.koreaisacademy.com/2023/img/tch/teacher007.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: flex;
+            }
+            div.n1 {
+                position: relative;
+                top: -20%;
+                left: 5%;
+            }
+            .n1 img {
+                width: 150px;
+            }
+            div.n2 {
+                position: absolute;
+                left: 365px;
+                top: 85px;
+            }
+            .n2 img {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="image">
+            <div class="n1"><img src="ear.png" /></div>
+            <div class="n2"><img src="nose-removebg-preview.png" /></div>
+        </div>
+    </body>
+</html>
+
+<!-- 개발자모드에서 Ctrl+Shift+P 에서 캡처 선택해서 캡처 가능 -->
